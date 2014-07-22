@@ -1,0 +1,25 @@
+- You should be familiar with binary trees, n-ary trees, and trie-trees at the very very least
+   easy
+- Describe tree traversal algorithms: BFS and DFS and describe the difference between inorder, postorder and preorder traversals.
+   easy
+- Create a binary search tree based on a sorted array.
+   bst.cpp
+- Write code for depth first search in a binary tree (iterative or recursive) and explain what's the performance.
+   very easy
+- Given two binary search trees, write function which tells if two such trees are the same – (i.e. same info in the nodes, same branching to left and right at every node). Write a recursive version first and then an iterative version.
+   easy
+- Given the pre-order and in-order traversing result of a binary tree, write a function to rebuild the tree.
+   bst.cpp
+Given the pre-order traversing result of a binary search tree, write a function to rebuild the tree.
+You're given a binary tree and pointers to two nodes in the tree. Describe the fastest algorithm you can come up with to determine the closest common ancestor.
+You have a genealogy: 1) Describe a data structure to represent it. 2) Given any two people within the genealogy, describe an algorithm to determine if they share a common ancestor. You just need to return true/false, not all ancestors.
+Traverse an array 4x4 in a snake-like way - across the diagonals, not along the rows/cols of the grid.
+Create a graph class and some traversal algorithms (bfs for example and dfs with a depth limit l). The main idea was to create a list of seen vertices and use a hash function in the graph traversal algorithms to avoid loops (asked by the interviewer)
+   Find the number of connected components in a Graph.
+   Implement Dijkstras algorithm.
+   Write code to find the second shortest path between two given nodes in an undirected graph.
+   How will you determine if two graphs are the same?
+   Refer to the game Boggle, given a 3x3 grid of letters represented as a char array, generate all possible word combinations. The legal character sequences are horizontally or vertically adjacent chars. So in [A, B, C; D, E, F; G, H, I], ABCFI is legal but DFH is illegal.
+   Write a function to check if a graph is bipartite.
+
+- You should be familiar with at least one flavor of balanced binary tree, whether it's a red/black tree, a splay tree or an AVL tree. You should actually know how it's implemented.

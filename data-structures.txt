@@ -1,0 +1,34 @@
+- What is your favorite data structure? What operations does it have? (Then some detailed questions about the algorithms based on this data structure)
+      hash table: insert, lookup, delete, expand
+- Tell me everything you know about hash-tables.
+   easy
+
+- Compare Hash Tables with BSTs. When would you use one or the other?
+   easy
+
+- Define binary search tree. Develop a procedure to verify a binary search tree.
+   easy
+- How do you store a binary search tree in file so that anyone else can reconstruct the tree only by this file
+   children: given position i of node then children at i*2 and i*2 + 1
+- Build a tree iterator for a Binary Search Tree.
+   bst.cpp
+- How do you efficiently compute union and intersection of 2 sets?
+   fairly easy
+- Implement a queue with a limited number of stacks.
+   stacks-and-queues.cpp
+- Implement a stack with a limited number of queues.
+   stacks-and-queues.cpp
+- How to manage to keep all operations (+ min) in a stack in O(1) and prove it
+   ok
+- How would you store 1 million phone numbers?
+   trie or just store the numbers as ints
+   use hoffman coding?
+   32 bits * 1000000 = 4 * 1000000 / 1024 = 3900 kilobytes almost 4 mbytes
+- How to build a heap?
+   linear time
+- A quad tree is used to represent a black/white image. If you are provided with two such image representations, write a function to create a third tree that represents the merged image. (Black overrides white, mixed; mixed overrides white) no more info
+   pretty easy, also merge
+- Implement a Least Recently Used cache.
+   double linked list + hash table to lookup frame nodes
+- You are given intervals of contiguous integers, like [1, 10), [15, 25), [40, 50), which are non-overlapping and of a fixed size. Design a data structure to store these intervals and have the operations of insert, delete, and find functions.
+   use BST

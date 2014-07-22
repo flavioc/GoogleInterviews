@@ -1,0 +1,49 @@
+- Describe inheritance and virtual in C++
+   easy
+Describe solutions to the "diamond" multiple inheritance problem
+  D inherits from B and C, while B and C inherit from A. 
+  solutions:
+   create two instances of A and make the programmer
+   follow declaration order
+   write mixing rules
+- What is the usage of "static" in C and C++?
+   easy
+- How would you implement a singleton in the language of your choice?
+   make the constructor private and create a public method that instantiates the singleton object
+- Write classes representing expression tree for a simple calculator. You care only about constants and basic binary operators. Write function evaluating expressions.
+   eval.cpp
+- What is the difference between function overloading and overriding?
+   overloading: doTask() doTask(object O)
+   overriding: virtual methods (inheritance)
+- How do you implement a virtual constructor?
+   There's no need for that since when creating an object, we will need to call the precise constructor.
+- Describe the different types of constructors in C++. When is the copy constructor used? When is the explicit keyword used?
+   copy constructor
+   "normal constructor" parameters and all
+   Explicit - avoid implicit copy constructor
+- Base class has one method that takes an argument as Object and subclass overrides it to pass String as argument. If a subclass object is called with argument of Object which method will be called?
+   the base class method I guess
+- Describe the design of a most-recently-used list, such as the "Recent Files" menu in Microsoft Word. It has two public methods, getlist() and access(str), which retrieve the list and mark an item as accessed, respectively. The list has a maximum number of items it can hold, say 5, and it should not have duplicates. Describe the data structure used and the running time of both public methods.
+   use hash table to check for duplicates
+   and use a single linked queue.
+- What's the difference between a hashtable and a hashmap?
+   easy
+- Compare the usage of a garbage collector vs destructor
+   gc - non deterministically - can run destructor depending on the implementation
+- What is the use of the equals() and hashCode() methods in Java?
+   hashCode - to hash
+   equals - check if objects are equal (hashes may collide)
+- Describe a few design patterns. (e.g. visitors pattern - iterators)
+   visitor pattern - ASTVisitor
+   iterator pattern
+- Implement the Iterator pattern with a class that will be constructed using two iterable objects and that will iterate through the elements of both objects.
+   two-iterators.cpp
+- Please design a iterator class
+   easy
+- Implement a class representing a shared resource which can be read by up to N readers or written by only one writer at the same time.
+   read/write lock
+   rw-lock.txt
+- Design and implement a garbage collection algorithm in any programming language. Give the run time analysis.
+   mark and sweep
+      -> mark all objects starting from the heap (root set). Complexity O(P), where P is the number of pointers.
+      -> sweep: move everything free to the freelist (takes O(H) where H is the size of the heap)

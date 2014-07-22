@@ -1,0 +1,39 @@
+
+// N readers 1 write
+
+s <- semaphore(N)
+
+read-lock():
+   s.sem-wait(1)
+   read---
+   s.sem-signal(1)
+
+write-lock()
+   s.sem-wait(N)
+   write---
+   s.sem-signal(N)
+
+
+// N readers M writers
+
+s <- semaphore(N)
+ws <- int(M)
+
+read-lock():
+   s.sem-wait(1)
+   read---
+   s.sem-signal(1)
+
+write-lock():
+   mtx.lock()
+   if(ws == M)
+      s.sem-wait(N)
+   ws -= 1
+   mtx.unlock()
+   write---
+   mtx.lock()
+   if(ws == M-1)
+      s.sem-signal(N)
+   ws++
+   mtx.unlock()
+

@@ -1,0 +1,16 @@
+- List structure definition
+   list.cpp
+- How would you reverse a linked-list?
+   list.cpp
+- Write a function to modify a singly linked list, appending copies of the first N-1 elements to the end in reverse order. For example, ['A', 'B', 'C', 'D'] becomes ['A', 'B', 'C', 'D', 'C', 'B', 'A'].
+   list.cpp
+- Sort a singly linked list
+   list.cpp
+- Remove a node from a singly linkedlist without knowing the head node. All you have is the node itself
+   list.cpp
+- Output a single linked list in reverse, in linear time and constant space, and recursively.
+   list.cpp
+- Given a very long single linked list, how to find the n-th entry from the end.
+   list.cpp
+- Find if there is a loop in a linked list. How long is the loop? Check this
+   list.cpp
